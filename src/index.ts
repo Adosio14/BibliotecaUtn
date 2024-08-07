@@ -13,7 +13,7 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(booksRouter);
 
-AppDataSource.initialize().then(() => app.listen(3000))
+AppDataSource.initialize().then(() => app.listen(3000)).then(() => console.log("Listening on 3000"))
 // app.listen(3000, () => {
 //     try {
 //         AppDataSource.initialize().then(() => console.log("Connected to db"))
