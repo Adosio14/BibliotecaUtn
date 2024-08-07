@@ -44,7 +44,6 @@ export async function remove(req: Request, res: Response) {
     }
 }
 export async function update(req: Request, res: Response) {
-    console.log("here we are")
     try {
         const { title, author, publisher, genre, location, stock } = req.body;
         const bookId: number = parseInt(req.params.id);
